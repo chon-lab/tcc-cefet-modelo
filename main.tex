@@ -1,0 +1,52 @@
+\documentclass[12pt]{tcc}
+
+% ------------- Configurações -------------
+\input{config/pacotes}
+\input{config/estilos}
+\input{config/cores}
+\input{config/comentarios}
+\input{config/comandos}
+\input{config/acronimos}
+
+% ------------- Informações principais -------------
+\newcommand\dtitle{O Título do Seu Trabalho Bem Bonito}
+\newcommand\dauthor{Seu Nome Completo}
+\newcommand\dadvisor{Prof. D.Sc. Carlos Eduardo Pantoja//Prof. Se Houver}
+
+\begin{document}
+\pagenumbering{gobble}
+\pagenumbering{roman}
+
+\dcover
+\dcoverback
+
+\includepdf{folhas/FICHA.pdf}
+\dlibrary{folhas/FOLHA_APROVACAO.pdf}
+% \input{pre-textuais/dedicatoria}
+% \input{pre-textuais/agradecimentos}
+\input{pre-textuais/epigrafe}
+\input{pre-textuais/resumo}
+\input{pre-textuais/abstract}
+
+% ------------- Sumários -------------
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+\listoftables
+% \newpage
+% \lstlistoflistings
+
+\pagenumbering{arabic}
+\justifying
+
+% --------- Capítulos -------------
+\input{capitulos/introducao}
+\input{capitulos/fundamentacao_teorica}
+\input{capitulos/trabalhos_relacionados}
+\input{capitulos/metodologia}
+\input{capitulos/estudo_de_caso}
+\input{capitulos/experimentacao}
+\input{capitulos/conclusao}
+
+\end{document}
